@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Easylife_DirectLink extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE_DIRECT_LINK.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category       Easylife
+ * @package        Easylife_DirectLink
+ * @copyright      2014 Marius Strajeru
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<layout>
+    <easylife_directlink>
+        <reference name="before_body_end">
+            <block type="easylife_directlink/config" template="easylife_directlink/config.phtml" name="easylife_directlink_config" as="easylife_directlink_config" after="-" />
+        </reference>
+    </easylife_directlink>
+
+    <catalog_category_layered>
+        <update handle="easylife_directlink" />
+        <reference name="easylife_directlink_config">
+            <action method="setPageType">
+                <page_type>catalog</page_type>
+            </action>
+        </reference>
+    </catalog_category_layered>
+
+    <catalogsearch_result_index>
+        <update handle="easylife_directlink" />
+        <reference name="easylife_directlink_config">
+            <action method="setPageType">
+                <page_type>search</page_type>
+            </action>
+        </reference>
+    </catalogsearch_result_index>
+
+    <catalogsearch_advanced_result>
+        <update handle="easylife_directlink" />
+        <reference name="easylife_directlink_config">
+            <action method="setPageType">
+                <page_type>search_advanced</page_type>
+            </action>
+        </reference>
+    </catalogsearch_advanced_result>
+</layout>

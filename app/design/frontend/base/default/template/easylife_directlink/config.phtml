@@ -1,0 +1,33 @@
+<?php
+/**
+ * Easylife_DirectLink extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE_DIRECT_LINK.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category       Easylife
+ * @package        Easylife_DirectLink
+ * @copyright      2014 Marius Strajeru
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+?>
+<?php
+/** @var Easylife_DirectLink_Block_Config $this */
+?>
+<?php $config = $this->getConfigJson();?>
+<?php if ($config) : ?>
+    <script type="text/javascript">
+        var directLinkConfig = <?php echo $config;?>;
+        for (var i in directLinkConfig ) {
+            if (directLinkConfig.hasOwnProperty(i)) {
+                $$('a[href=' + i + ']').each(function(item){
+                    $(item).href = directLinkConfig[i];
+                });
+            }
+        }
+    </script>
+<?php endif;?>

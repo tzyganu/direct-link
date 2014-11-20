@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Easylife_DirectLink extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE_DIRECT_LINK.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category       Easylife
+ * @package        Easylife_DirectLink
+ * @copyright      2014 Marius Strajeru
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <Easylife_DirectLink>
+            <version>1.0.0</version>
+        </Easylife_DirectLink>
+    </modules>
+    <global>
+        <blocks>
+            <easylife_directlink>
+                <class>Easylife_DirectLink_Block</class>
+            </easylife_directlink>
+        </blocks>
+        <helpers>
+            <easylife_directlink>
+                <class>Easylife_DirectLink_Helper</class>
+            </easylife_directlink>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <easylife_directlink>
+                    <file>easylife_directlink.xml</file>
+                </easylife_directlink>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Easylife_DirectLink>
+                    <files>
+                        <default>Easylife_DirectLink.csv</default>
+                    </files>
+                </Easylife_DirectLink>
+            </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Easylife_DirectLink>
+                    <files>
+                        <default>Easylife_DirectLink.csv</default>
+                    </files>
+                </Easylife_DirectLink>
+            </modules>
+        </translate>
+    </adminhtml>
+    <default>
+        <easylife_directlink>
+            <settings>
+                <enabled>1</enabled>
+                <enabled_catalog>1</enabled_catalog>
+                <list_block_name_catalog>product_list</list_block_name_catalog>
+                <filter_block_name_catalog>catalog.leftnav</filter_block_name_catalog>
+                <enabled_search>1</enabled_search>
+                <list_block_name_search>search_result_list</list_block_name_search>
+                <filter_block_name_search>catalogsearch.leftnav</filter_block_name_search>
+                <enabled_search_advanced>0</enabled_search_advanced>
+                <list_block_name_search_advanced>search_result_list</list_block_name_search_advanced>
+                <filter_block_name_search_advanced />
+            </settings>
+        </easylife_directlink>
+    </default>
+</config>

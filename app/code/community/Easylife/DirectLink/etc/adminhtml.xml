@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Easylife_DirectLink extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE_DIRECT_LINK.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category       Easylife
+ * @package        Easylife_DirectLink
+ * @copyright      2014 Marius Strajeru
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <easylife_directlink translate="title" module="easylife_directlink">
+                                        <title>Easylife Direct Link</title>
+                                    </easylife_directlink>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

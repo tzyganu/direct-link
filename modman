@@ -1,0 +1,6 @@
+#Easylife Direct Link
+app/etc/modules/Easylife_DirectLink.xml    app/etc/modules/Easylife_DirectLink.xml
+app/code/community/Easylife/DirectLink app/code/community/Easylife/DirectLink
+app/locale/en_US/Easylife_DirectLink.csv   app/locale/en_US/Easylife_DirectLink.csv
+app/design/frontend/base/default/layout/easylife_directlink.xml    app/design/frontend/base/default/layout/easylife_directlink.xml
+app/design/frontend/base/default/template/easylife_directlink  app/design/frontend/base/default/template/easylife_directlink

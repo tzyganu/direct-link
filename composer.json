@@ -1,0 +1,14 @@
+{
+    "name":"tzyganu/direct-link",
+    "type":"magento-module",
+	"licence": "mit",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/tzyganu/direct-link"
+        }
+    ],
+	"require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}
